@@ -1,5 +1,5 @@
 .header{
-  background-color: #e1b6c6;
+  background-color: #000000;
   height: 3rem;
   display: flex;
   align-items: center;
@@ -15,7 +15,7 @@
 }
 .header a {
   text-decoration: none;
-  color:black;
+  color:rgb(255, 255, 255);
   font-size: 1.5rem;
 }
 .header li {
@@ -23,7 +23,7 @@
 }
 .logo {
   font-size: 2rem;
-  color: black;
+  color: rgb(255, 255, 255);
   font-weight: bold;
 }
 .header a:hover,

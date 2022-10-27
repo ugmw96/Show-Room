@@ -1,0 +1,31 @@
+.card {
+  background-color: rgb(191, 187, 187);
+  width: 200px;
+  height: 300px;
+  border-radius: 20px;
+  padding: 20px;
+
+}
+.card h4 {
+  color:darkslategray;
+  font-size: 20px;
+  display: flex;
+  margin: 0;
+  margin-bottom: 10px;
+}
+.card img {
+  width: 70px;
+  height: 80px;
+  margin-left: 30%;
+}
+.card p {
+  font-size: 13px;
+}
+.card label {
+  margin-left: 40%;
+}
+.card button {
+  color: aliceblue;
+  background-color: brown;
+  padding:5px 10px;
+}
