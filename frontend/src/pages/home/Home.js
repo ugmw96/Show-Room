@@ -1,7 +1,15 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Card from '../../shared/Card'
 
 const Home = () => {
+    const [data, setData] = useState([]);
+
+    useEffect(()=> {
+      fetch("http://localhost:8080/api/product/all")
+      .then((res) => res.json())
+      .then(data => setData([data]))
+    },[])
+    
   return (
     <div>
       Home
