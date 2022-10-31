@@ -1,3 +1,4 @@
+const { application } = require('express');
 const Product = require('../modules/Product');
 
 //add new product
@@ -30,7 +31,8 @@ exports.allProducts = async(req, res) => {
 //get a product by ID
 exports.getProductByID = async(req, res) => {
   try {
-    const product = await Product.findById(req.body.id);
+    const product = await Product.findById(req.params.id).exec();
+    res.send(product);
   } catch (error) {
     console.log(error);
   }
@@ -39,8 +41,11 @@ exports.getProductByID = async(req, res) => {
 //delete product
 exports.deleteProduct = async(req, res) => {
   try {
+    const product = await Product.findByIdAndDelete(req.params.id);
+    res.send(product.id)
     
   } catch (error) {
+    console.log(error);
   }
 };
 
