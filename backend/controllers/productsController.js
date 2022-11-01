@@ -28,7 +28,7 @@ exports.allProducts = async(req, res) => {
   }
 };
 
-//get a product by ID
+// get a product by ID
 exports.getProductByID = async(req, res) => {
   try {
     const product = await Product.findById(req.params.id).exec();
@@ -42,7 +42,7 @@ exports.getProductByID = async(req, res) => {
 exports.deleteProduct = async(req, res) => {
   try {
     const product = await Product.findByIdAndDelete(req.params.id);
-    res.send(product.id)
+    res.send(product.id);
     
   } catch (error) {
     console.log(error);
