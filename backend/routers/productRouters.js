@@ -3,7 +3,7 @@ const productsControllers = require('../controllers/productsController')
 
 router.post('/new', productsControllers.addProduct);
 
-router.get('/:id', productsControllers.getProductByID);
+// router.get('/:id', productsControllers.getProductByID);
 
 router.get('/all', productsControllers.allProducts);
 

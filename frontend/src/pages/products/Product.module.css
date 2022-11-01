@@ -1,4 +1,10 @@
 .cardSet{
-  display: inline-flex;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 0.5fr));
+  margin: 0;
 
+}
+
+.container{
+  padding:50px
 }

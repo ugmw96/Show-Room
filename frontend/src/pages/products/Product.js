@@ -17,15 +17,15 @@ const Product = () => {
     }
     products();
   },[])
-console.log(data);
+  
   return (
-    <div>
+    <div className={classes.cardSet}>
       {loading && <Loading/>}
       {!loading && 
       data.map((products)=> {
         return(
-          <div className={classes.cardSet}>
-            <Card description={products.description} imageUrl={products.image} price={products.price} title={products.name}/>
+          <div className={classes.container} key={products._id}>
+            <Card id={products._id} description={products.description} imageUrl={products.image} price={products.price} title={products.name}/>
           </div>
           
         )
