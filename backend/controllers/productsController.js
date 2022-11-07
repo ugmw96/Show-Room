@@ -3,7 +3,6 @@ const Product = require('../modules/Product');
 
 //add new product
 exports.addProduct = async(req,res) => {
-  console.log(req.body);
   const newProduct = new Product({
     name: req.body.name,
     description: req.body.description,
