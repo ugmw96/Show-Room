@@ -18,4 +18,5 @@ const User = new Schema({
     type: 'string',
     required: true,
   }
+  
 })
