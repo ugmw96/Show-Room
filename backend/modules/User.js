@@ -9,5 +9,13 @@ const User = new Schema({
   email: {
     type: 'string',
     required: true,
+  },
+  password: {
+    type: 'string',
+    required: true,
+  },
+  userRole: {
+    type: 'string',
+    required: true,
   }
 })
