@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/ugmw96/Show-Room/tree/main/frontend/static/css/main.074a8dcc.css",
+    "main.js": "/ugmw96/Show-Room/tree/main/frontend/static/js/main.8debfe01.js",
+    "index.html": "/ugmw96/Show-Room/tree/main/frontend/index.html",
+    "main.074a8dcc.css.map": "/ugmw96/Show-Room/tree/main/frontend/static/css/main.074a8dcc.css.map",
+    "main.8debfe01.js.map": "/ugmw96/Show-Room/tree/main/frontend/static/js/main.8debfe01.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.074a8dcc.css",
+    "static/js/main.8debfe01.js"
+  ]
+}
